@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /styles.css
+Allow: /img/
+
+Crawl-delay: 1

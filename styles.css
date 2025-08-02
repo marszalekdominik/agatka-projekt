@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/* Variables */
+:root {
+    --primary-color: #433878;
+    --secondary-color: #FFE1FF;
+    --tertiary-color: #7E60BF;
+    --quaternary-color: #E4B1F0;
+    --font-family-montserrat: 'Montserrat', sans-serif;
+    --font-family-open-sans: 'Open Sans', sans-serif;
+    --font-weight: 300;
+    --transition-speed: 0.3s;
+
+}
+
+body {
+    background-color: #fff;
+    font-family: var(--font-family-open-sans);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    /* color: var(--secondary-color); */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.header .nav-bar {
+    display: flex;
+}
+
+.header .logo-title { 
+    font-weight: 400;
+    font-family: var(--font-family-open-sans);
+    color: var(--primary-color);
+}
+
+.hero-banner {
+    position: relative;
+    background-image: url(img/agatka.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 500px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer,
+.newsletter, 
+.collaboration, 
+.about { 
+    padding: 30px 25px 30px 25px; 
+}
+
+.about {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.collaboration {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.newsletter {
+    background-color: var(--quaternary-color);
+    color: var(--primary-color);
+}
+
+.collaboration .section-text {
+    text-align: center;
+}
+
+.collaboration .section-title {
+    color: #fff;
+}
+
+.section-title {
+    font-size: 26px;
+    text-align: center;
+    font-family: var(--font-family-montserrat);
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.section-text {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.email-text {
+    margin-top: 10px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links-container {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content:center;
+}
+
+.social-link {
+    font-size: 28px;
+    border-radius: 50%;
+    padding:  5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.social-link:last-of-type {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        width: 100%;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .pielegnacje {
+        display: flex;
+        flex-direction: column;
+    }
+    .plan {
+        width: 100%;
+        margin-top: 20px;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan h3 {
+        font-size: 24px;
+        font-family: var(--font-family-montserrat);
+    }
+}
