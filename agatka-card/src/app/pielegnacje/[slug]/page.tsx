@@ -1,10 +1,15 @@
-import { useRouter } from "next/navigation";
 import { skincarePlans } from "../page";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faExternalLink } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import HeroBanner from "@/app/components/HeroBaner";
 import ProductView from "../ProductView";
+
+export async function generateStaticParams() {
+    return Object.keys(skincarePlans).map((slug) => ({
+        slug: slug,
+    }));
+}
 
 export default async function Pielegnacje({
     params,
@@ -14,33 +19,33 @@ export default async function Pielegnacje({
     const { slug } = await params;
     const plan = skincarePlans[slug as keyof typeof skincarePlans];
     return (
-        <div className="mt-5">
+        <>
             <HeroBanner />
-            <Link href="/pielegnacje" className="flex items-center gap-2">
+            <Link href="/pielegnacje" className="flex items-center">
                 <FontAwesomeIcon icon={faChevronLeft} />
             </Link>
-            <div className="flex flex-col items-center justify-center">
-                <h1 className="font-family-montserrat text-3xl mb-7 ">{plan.title}</h1>
+            <div className="flex flex-col items-center justify-center mt-5">
+                <h1 className="font-family-montserrat text-3xl mb-7 text-center">{plan.title}</h1>
             </div>
             <div className="flex flex-col items-center justify-center">
                 <p>{plan.description}</p>
             </div>
-            <div className="flex flex-col items-center justify-center">
-                <h2>Rano</h2>
-                <ul>
+            <div className="flex flex-col items-center justify-center mt-10">
+                <h2 className="text-[1.4rem] font-family-montserrat font-semibold mb-5 bg-[var(--color-quaternary)] w-full text-white text-center">Rano</h2>
+                <ul className="w-full">
                     {plan.dayProducts.map((product) => (
                         <ProductView key={product.title} product={product} />
                     ))}
                 </ul>
             </div>
-            <div className="flex flex-col items-center justify-center">
-                <h2>Wieczór</h2>
-                <ul>
+            <div className="flex flex-col items-center justify-center mt-10">
+                <h2 className="text-[1.4rem] font-family-montserrat font-semibold mb-5 bg-[var(--color-primary)] w-full text-white text-center">Wieczór</h2>
+                <ul className="w-full">
                     {plan.nightProducts.map((product) => (
                         <ProductView key={product.title} product={product} />
                     ))}
                 </ul>
             </div>
-        </div>
+        </>
     )
 }

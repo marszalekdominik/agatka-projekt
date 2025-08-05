@@ -22,6 +22,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Agata Stan - Ekspert Pielęgnacji Skóry",
   description: "Agata Stan - Ekspert Pielęgnacji Skóry",
+  keywords: ["Agata Stan", "Ekspert Pielęgnacji Skóry", "Trądzik", "Agata Stan Instagram", "Agata Stan TikTok"],
 };
 
 export default function RootLayout({
@@ -32,13 +33,13 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`antialiased`}
+        className={`antialiased ${montserrat.variable} ${openSans.variable}`}
       >
         <Header />
         {children}
         <Footer />
         <GoogleTagManager gtmId="G-F798N3B1DJ" />
-        <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" type="text/javascript"></script>
+        <script async id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" type="text/javascript"></script>
       </body>
     </html>
   );

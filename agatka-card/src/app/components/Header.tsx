@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link";
-import { SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
+import { SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 import { Sheet } from "./ui/sheet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
