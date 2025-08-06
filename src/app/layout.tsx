@@ -47,7 +47,7 @@ export default function RootLayout({
             gtag('js', new Date());
           `}
         </Script>
-        <Script id="Cookiebot" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" src="https://consent.cookiebot.com/uc.js" type="text/javascript" strategy="beforeInteractive" async />
+        {/* <Script id="Cookiebot" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" src="https://consent.cookiebot.com/uc.js" type="text/javascript" strategy="beforeInteractive" async /> */}
       </body>
     </html>
   );
