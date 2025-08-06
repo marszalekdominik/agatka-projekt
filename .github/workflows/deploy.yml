@@ -34,3 +34,12 @@ jobs:
           port: ${{ secrets.MIKRUS_SSH_PORT }}
           source: "out/*"
           target: "/var/www/agatka-card/"
+      - name: Restart nginx
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.MIKRUS_SSH_SERVER }}
+          username: ${{ secrets.MIKRUS_SSH_USER }}
+          key: ${{ secrets.MIKRUS_SSH_KEY }}
+          port: ${{ secrets.MIKRUS_SSH_PORT }}
+          script: |
+            docker restart nginx

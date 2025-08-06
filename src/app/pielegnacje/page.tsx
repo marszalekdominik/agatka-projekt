@@ -19,6 +19,51 @@ export type SkincarePlan = {
 };
 
 export const skincarePlans: SkincarePlan = {
+    'pielenacja-wspomagajaca-skore-tradzikowa': {
+        title: "Pielęgnacja wspomagająca skórę trądzikową",
+        link: "pielenacja-wspomagajaca-skore-tradzikowa",
+        description: "W tej pielęgnacji skupiłam się na działaniu przeciwzaskównikowych poprzez kwasy takie jak salicylowy czy azelainowy, które połączyłam z nawilżeniem, koniecznym do poprawnego funkcjonowania skóry trądzikowej. Chciałam jednak mocno zaznaczyć, że trądzik jest chorobą skóry i w większości przypadków sama pielęgnacja nie wystarczy by poprawić całkowicie stan skóry. Zachęcam was do wybrania się na wizytę do dermatologa w celu omówienia leczenia. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",  
+        nightProducts: [
+            {
+                step: "Olejek do demakijażu",
+                title: "Mixsoon - Bean Cleansing Oil - 195ml",
+                link: "https://go.cosibella.pl/4foaAfJ"
+            },
+            {
+                step: "Żel do mycia twarzy",
+                title: "Mixsoon - Centella Cleansing Foam - 150ml",
+                link: "https://go.cosibella.pl/4l6bONH"
+            },
+            {
+                step: "Serum",
+                title: "SkinTra - Everything What Your Skin Will Love - 200ml",
+                link: "https://go.cosibella.pl/4jYdpV7"
+            },
+            {
+                step: "Krem",
+                title: "La Roche-Posay - Effaclar H Iso-Biome - 40ml",
+                link: "https://go.cosibella.pl/4m0CT6o"
+            },
+        ],
+        dayProducts: [
+            {
+                step: "Żel do mycia twarzy",
+                title: "Mixsoon - Centella Cleansing Foam - 150ml",
+                link: "https://go.cosibella.pl/4l6bONH"
+            },
+            {
+                step: "Serum",
+                title: "Cos De BAHA - AZ Azelaic Acid 10 Serum - 30ml",
+                link: "https://go.cosibella.pl/4flv6xr"
+            },
+            {
+                step: "SPF",
+                title: "Missha - All-Around Safe Block Aqua Sun SPF50+/PA++++ - 50ml",
+                link: "https://go.cosibella.pl/3H4EHMs"
+            },
+        ]
+
+    },
     'pielegnacja-na-przebarwienia-po-wypryskach': {
         title: "Pielęgnacja na przebarwienia po wypryskach",
         link: "pielegnacja-na-przebarwienia-po-wypryskach",
@@ -55,6 +100,50 @@ export const skincarePlans: SkincarePlan = {
                 step: "Serum",
                 title: "SkinTra - Eraser - 30ml",
                 link: "https://go.cosibella.pl/4n7zD9Y"
+            },
+            {
+                step: "SPF",
+                title: "CeraVe SPF50 - 52ml",
+                link: "https://go.cosibella.pl/45gjKGo"
+            },
+        ]
+    },
+    'anti-aging': {
+        title: "Pielęgnacja anti aging",
+        link: "anti-aging",
+        description: "W tej pielęgnacji połączyłam działanie przeciwzmarszczkowym retinolu, peptydów i DMAE razem z poranną antyoksydacją. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",
+        nightProducts: [
+            {
+                step: "Olejek do demakijażu",
+                title: "Mixsoon - Bean Cleansing Oil - 195ml",
+                link: "https://go.cosibella.pl/4foaAfJ"
+            },
+            {
+                step: "Żel do mycia twarzy",
+                title: "Bioderma - Sensibio Gel Moussant - 500ml",
+                link: "https://go.cosibella.pl/41f2ksm"
+            },
+            {
+                step: "Serum",
+                title: "SkinTra - Dmaestro - 30ml",
+                link: "https://go.cosibella.pl/4kMjc1y"
+            },
+            {
+                step: "Krem",
+                title: "Mixsoon - Bean Cream - 50ml",
+                link: "https://go.cosibella.pl/3GyRPZL"
+            },
+        ],
+        dayProducts: [
+            {
+                step: "Żel do mycia twarzy",
+                title: "Bioderma - Sensibio Gel Moussant - 500ml",
+                link: "https://go.cosibella.pl/41f2ksm"
+            },
+            {
+                step: "Serum",
+                title: "Liqpharm - LIQ CC Serum Rich 15% Vitamin C BOOST - 30ml",
+                link: "https://go.cosibella.pl/45dz9aa"
             },
             {
                 step: "SPF",
@@ -112,154 +201,28 @@ export const skincarePlans: SkincarePlan = {
             },
         ]
     },
-    'anti-aging': {
-        title: "Pielęgnacja Anti Aging",
-        link: "anti-aging",
-        description: "W tej pielęgnacji połączyłam działanie przeciwzmarszczkowym retinolu, peptydów i DMAE razem z poranną antyoksydacją. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",
-        nightProducts: [
-            {
-                step: "Olejek do demakijażu",
-                title: "Mixsoon - Bean Cleansing Oil - 195ml",
-                link: "https://go.cosibella.pl/4foaAfJ"
-            },
-            {
-                step: "Żel do mycia twarzy",
-                title: "Bioderma - Sensibio Gel Moussant - 500ml",
-                link: "https://go.cosibella.pl/41f2ksm"
-            },
-            {
-                step: "Serum",
-                title: "SkinTra - Dmaestro - 30ml",
-                link: "https://go.cosibella.pl/4kMjc1y"
-            },
-            {
-                step: "Krem",
-                title: "Mixsoon - Bean Cream - 50ml",
-                link: "https://go.cosibella.pl/3GyRPZL"
-            },
-        ],
-        dayProducts: [
-            {
-                step: "Żel do mycia twarzy",
-                title: "Bioderma - Sensibio Gel Moussant - 500ml",
-                link: "https://go.cosibella.pl/41f2ksm"
-            },
-            {
-                step: "Serum",
-                title: "Liqpharm - LIQ CC Serum Rich 15% Vitamin C BOOST - 30ml",
-                link: "https://go.cosibella.pl/45dz9aa"
-            },
-            {
-                step: "SPF",
-                title: "CeraVe SPF50 - 52ml",
-                link: "https://go.cosibella.pl/45gjKGo"
-            },
-        ]
-    },
-    'pielenacja-wspomagajaca-skore-tradzikowa': {
-        title: "Pielęgnacja wspomagająca skórę trądzikową",
-        link: "pielenacja-wspomagajaca-skore-tradzikowa",
-        description: "W tej pielęgnacji skupiłam się na działaniu przeciwzaskównikowych poprzez kwasy takie jak salicylowy czy azelainowy, które połączyłam z nawilżeniem, koniecznym do poprawnego funkcjonowania skóry trądzikowej. Chciałam jednak mocno zaznaczyć, że trądzik jest chorobą skóry i w większości przypadków sama pielęgnacja nie wystarczy by poprawić całkowicie stan skóry. Zachęcam was do wybrania się na wizytę do dermatologa w celu omówienia leczenia. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",  
-        nightProducts: [
-            {
-                step: "Olejek do demakijażu",
-                title: "Mixsoon - Bean Cleansing Oil - 195ml",
-                link: "https://go.cosibella.pl/4foaAfJ"
-            },
-            {
-                step: "Żel do mycia twarzy",
-                title: "Mixsoon - Centella Cleansing Foam - 150ml",
-                link: "https://go.cosibella.pl/4l6bONH"
-            },
-            {
-                step: "Serum",
-                title: "SkinTra - Everything What Your Skin Will Love - 200ml",
-                link: "https://go.cosibella.pl/4jYdpV7"
-            },
-            {
-                step: "Krem",
-                title: "La Roche-Posay - Effaclar H Iso-Biome - 40ml",
-                link: "https://go.cosibella.pl/4m0CT6o"
-            },
-        ],
-        dayProducts: [
-            {
-                step: "Żel do mycia twarzy",
-                title: "Mixsoon - Centella Cleansing Foam - 150ml",
-                link: "https://go.cosibella.pl/4l6bONH"
-            },
-            {
-                step: "Serum",
-                title: "Cos De BAHA - AZ Azelaic Acid 10 Serum - 30ml",
-                link: "https://go.cosibella.pl/4flv6xr"
-            },
-            {
-                step: "SPF",
-                title: "Missha - All-Around Safe Block Aqua Sun SPF50+/PA++++ - 50ml",
-                link: "https://go.cosibella.pl/3H4EHMs"
-            },
-        ]
-
-    },
 }
 
 export default function Pielegnacje() { 
     
-    // const skincareProducts = [
-    //     {
-    //         title: "Sera z witamina C",
-    //         link: "/sera-z-witamina-c"
-    //     },
-    //     {
-    //         title: "Sera na przebarwienia",
-    //         link: "/sera-na-przebarwienia"
-    //     },
-    //     {
-    //         title: "Kremy z filtrem",
-    //         link: "/kremy-z-filtrem"
-    //     },
-    //     {
-    //         title: "Kremy nawilżające",
-    //         link: "/kremy-nawilzajace"
-    //     },
-    //     {
-    //         title: "Produkty z kwasami",
-    //         link: "/produkty-z-kwasami"
-    //     },
-    //     {
-    //         title: "Produkty oczyszczające",
-    //         link: "/produkty-oczyszczajace"
-    //     },
-    // ]
     return (
         <>
             <HeroBanner />
             <div className="flex flex-col items-center justify-center px-5">
                 <h2 className="font-family-montserrat text-3xl my-7 ">Plany Pielęgnacyjne</h2>
                 <div className="w-full">
+                    <Link href="/pielegnacje/spersonalizowany-plan-pielegnacyjny" className="font-family-montserrat bg-[var(--color-secondary)] border border-[var(--color-primary)] p-8 text-[1.4rem] w-full mb-5 flex rounded-md font-medium underline">Konsultacje pielęgnacyjne</Link>
                     <Accordion type="single" collapsible className="w-full">
-                        {/* <AccordionItem value="plany-pielegnacyjne" className="border-none mb-5">
-                            <AccordionTrigger className="bg-[var(--color-secondary)] border border-[var(--color-primary)] p-8 text-[1.4rem]">Spersonalizowane plany pielegnacyjne</AccordionTrigger>
-                            <AccordionContent className="p-4">
-                                
-                            </AccordionContent>
-                        </AccordionItem> */}
                         <AccordionItem value="plany-pielegnacyjne" className="border-none mb-5">
                             <AccordionTrigger className="bg-transparent border border-[var(--color-primary)] p-8 text-[1.4rem] font-family-montserrat">Konkretne plany pielęgnacyjne</AccordionTrigger>
                             <AccordionContent className="p-4">
                                 <ul>
                                 {Object.values(skincarePlans).map((plan) => (
-                                    <li key={plan.title}><Link href={`/pielegnacje/${plan.link}`} className="block w-full text-[1rem] pb-1">{plan.title}</Link></li>
+                                    <li key={plan.title}><Link href={`/pielegnacje/${plan.link}`} className="block w-full text-[1rem] pb-1 underline">{plan.title}</Link></li>
                                 ))}
                                 </ul>
                             </AccordionContent>
                         </AccordionItem>
-                        {/* <AccordionItem value="polecane-kosmetyki" className="border-none">
-                            <AccordionTrigger className="bg-transparent border border-[var(--color-primary)] p-8 text-[1.4rem]">Konkretne polecane kosmetyki</AccordionTrigger>
-                            <AccordionContent className="p-4">
-                            Yes. It adheres to the WAI-ARIA design pattern.
-                            </AccordionContent>
-                        </AccordionItem> */}
                     </Accordion>
                 </div>
             </div>

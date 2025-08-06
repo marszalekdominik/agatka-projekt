@@ -16,12 +16,15 @@ export default function Header() {
                     <SheetTrigger>
                         <FontAwesomeIcon icon={faBars} className="text-[var(--color-primary)]" />
                     </SheetTrigger>
-                    <SheetContent className="w-[400px] sm:w-[540px] bg-white" >
+                    <SheetContent className="w-[400px] sm:w-[540px] bg-[var(--color-secondary)]" >
                         <SheetHeader>
-                            <SheetTitle className="text-[var(--color-primary)]">Menu</SheetTitle>
+                            <SheetTitle></SheetTitle>
                         </SheetHeader>
-                        <div className="flex flex-col px-10">
+                        <div className="flex flex-col px-10 text-[var(--color-primary)] text-[1.2rem]">
                             <Link href="/pielegnacje" onClick={() => setOpen(false)}>Plany pielęgnacyjne</Link>
+                        </div>
+                        <div className="flex flex-col px-10 text-[var(--color-primary)] text-[1.2rem]">
+                            <Link href="/pielegnacje/spersonalizowany-plan-pielegnacyjny" onClick={() => setOpen(false)}>Konsultacje pielęgnacyjne</Link>
                         </div>
                     </SheetContent>
                 </Sheet>
