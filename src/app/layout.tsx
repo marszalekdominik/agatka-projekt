@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
@@ -39,14 +39,15 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-F798N3B1DJ" strategy="afterInteractive" async />
+        <GoogleAnalytics gaId="G-F798N3B1DJ" />
+        {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-F798N3B1DJ" strategy="afterInteractive" async />
         <Script async id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
           `}
-        </Script>
+        </Script> */}
         {/* <Script id="Cookiebot" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" src="https://consent.cookiebot.com/uc.js" type="text/javascript" strategy="beforeInteractive" async /> */}
       </body>
     </html>
