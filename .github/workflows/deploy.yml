@@ -25,7 +25,6 @@ jobs:
           port: ${{ secrets.MIKRUS_SSH_PORT }}
           script: |
             rm -rf /var/www/agatka-card/*
-          debug: true
       - name: Deploy scp
         uses: appleboy/scp-action@master
         with:
