@@ -39,7 +39,6 @@ export default function RootLayout({
         {children}
         <Footer />
         <GoogleTagManager gtmId="G-F798N3B1DJ" />
-        <script async id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" type="text/javascript"></script>
       </body>
     </html>
   );
