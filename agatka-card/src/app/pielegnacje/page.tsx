@@ -22,7 +22,7 @@ export const skincarePlans: SkincarePlan = {
     'pielegnacja-na-przebarwienia-po-wypryskach': {
         title: "Pielęgnacja na przebarwienia po wypryskach",
         link: "pielegnacja-na-przebarwienia-po-wypryskach",
-        description: "Pielęgnacja na przebarwienia po wypryskach opis",
+        description: "W tej pielęgnacji skupiłam się na działaniu łagodzącym oraz rozjaśniającym między innymi poprzez składniki takie jak azeloglicyna, kwas tranwksamowy i niacynamid. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella. ",
         nightProducts: [
             {
                 step: "Olejek do demakijażu",
@@ -66,7 +66,7 @@ export const skincarePlans: SkincarePlan = {
     'pielenacja-regenerujaca': {
         title: "Pielęgnacja regenerująca",
         link: "pielenacja-regenerujaca",
-        description: "Pielęgnacja na regenerację skóry opis",
+        description: "W tej pielęgnacji postawiłam na warstwowość produktów, by jak najbardziej odżywić i nawilżyć skórę. Kluczowe składniki w tej pielęgnacji to ceramidy, fermenty czy wąkrota azjatycka. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",
         nightProducts: [
             {
                 step: "Olejek do demakijażu",
@@ -115,7 +115,7 @@ export const skincarePlans: SkincarePlan = {
     'anti-aging': {
         title: "Pielęgnacja Anti Aging",
         link: "anti-aging",
-        description: "Pielęgnacja Anti Aging opis",
+        description: "W tej pielęgnacji połączyłam działanie przeciwzmarszczkowym retinolu, peptydów i DMAE razem z poranną antyoksydacją. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",
         nightProducts: [
             {
                 step: "Olejek do demakijażu",
@@ -159,7 +159,7 @@ export const skincarePlans: SkincarePlan = {
     'pielenacja-wspomagajaca-skore-tradzikowa': {
         title: "Pielęgnacja wspomagająca skórę trądzikową",
         link: "pielenacja-wspomagajaca-skore-tradzikowa",
-        description: "Pielęgnacja wspomagająca skórę trądzikową opis",  
+        description: "W tej pielęgnacji skupiłam się na działaniu przeciwzaskównikowych poprzez kwasy takie jak salicylowy czy azelainowy, które połączyłam z nawilżeniem, koniecznym do poprawnego funkcjonowania skóry trądzikowej. Chciałam jednak mocno zaznaczyć, że trądzik jest chorobą skóry i w większości przypadków sama pielęgnacja nie wystarczy by poprawić całkowicie stan skóry. Zachęcam was do wybrania się na wizytę do dermatologa w celu omówienia leczenia. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",  
         nightProducts: [
             {
                 step: "Olejek do demakijażu",

@@ -21,7 +21,7 @@ export default function Header() {
                             <SheetTitle className="text-[var(--color-primary)]">Menu</SheetTitle>
                         </SheetHeader>
                         <div className="flex flex-col px-10">
-                            <Link href="/pielegnacje" onClick={() => setOpen(false)}>Pielegnacje</Link>
+                            <Link href="/pielegnacje" onClick={() => setOpen(false)}>Pielęgnacje</Link>
                         </div>
                     </SheetContent>
                 </Sheet>

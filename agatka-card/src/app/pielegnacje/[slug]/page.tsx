@@ -25,7 +25,7 @@ export default async function Pielegnacje({
                 <FontAwesomeIcon icon={faChevronLeft} />
             </Link>
             <div className="flex flex-col items-center justify-center mt-5">
-                <h1 className="font-family-montserrat text-3xl mb-7 text-center">{plan.title}</h1>
+                <h2 className="font-family-montserrat text-3xl mb-7 text-center">{plan.title}</h2>
             </div>
             <div className="flex flex-col items-center justify-center">
                 <p>{plan.description}</p>
