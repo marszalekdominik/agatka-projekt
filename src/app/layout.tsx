@@ -39,16 +39,14 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <GoogleTagManager gtmId="G-F798N3B1DJ" />
-        {/* <script async id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" type="text/javascript"></script> */}
-        {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-F798N3B1DJ" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-F798N3B1DJ" strategy="afterInteractive" async />
+        <Script async id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
           `}
-        </Script> */}
+        </Script>
         <Script id="Cookiebot" data-cbid="02dc9824-055d-4aa0-81e4-f93c5770179b" data-blockingmode="auto" src="https://consent.cookiebot.com/uc.js" type="text/javascript" strategy="beforeInteractive" async />
       </body>
     </html>
