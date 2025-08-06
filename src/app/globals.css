@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-family-montserrat: var(--font-montserrat);
+  --font-family-open-sans: var(--font-open-sans);
+  --color-primary: #433878;
+  --color-secondary: #FFE1FF;
+  --color-tertiary: #7E60BF;
+  --color-quaternary: #E4B1F0;
+}
+
+body {
+  background: var(--background);
+  color: var(--color-primary);
+  font-family: var(--font-family-open-sans);
+}
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+  --color-quaternary: var(--color-quaternary);
+}
+
+@theme inline {
+  --font-family-montserrat: var(--font-montserrat);
+  --font-family-open-sans: var(--font-open-sans);
+}
