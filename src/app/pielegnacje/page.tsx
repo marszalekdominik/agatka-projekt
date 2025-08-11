@@ -108,9 +108,9 @@ export const skincarePlans: SkincarePlan = {
             },
         ]
     },
-    'anti-aging': {
-        title: "Pielęgnacja anti aging",
-        link: "anti-aging",
+    'pielenacja-przeciwzmarszczkowa': {
+        title: "Pielęgnacja przeciwzmarszczkowa",
+        link: "pielenacja-przeciwzmarszczkowa",
         description: "W tej pielęgnacji połączyłam działanie przeciwzmarszczkowym retinolu, peptydów i DMAE razem z poranną antyoksydacją. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",
         nightProducts: [
             {
