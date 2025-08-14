@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, MetadataRoute } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-//import { skincarePlans } from './pielegnacje/page'
+import { skincarePlans } from './pielegnacje/page'
 
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -26,51 +26,51 @@ export const metadata: Metadata = {
   keywords: ["Agata Stan", "Ekspert Pielęgnacji Skóry", "Trądzik", "Agata Stan Instagram", "Agata Stan TikTok"],
 };
 
-// export function robots(): MetadataRoute.Robots {
-//   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://agatastan.com'
+export function robots(): MetadataRoute.Robots {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://agatastan.com'
   
-//   return {
-//     rules: {
-//       userAgent: '*',
-//       allow: '/',
-//     },
-//     sitemap: `${baseUrl}/sitemap.xml`,
-//   }
-// }
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+    },
+    sitemap: `${baseUrl}/sitemap.xml`,
+  }
+}
 
-// export function sitemap(): MetadataRoute.Sitemap {
-//   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://agatastan.com'
+export function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://agatastan.com'
   
-//   const staticPages = [
-//     {
-//       url: baseUrl,
-//       lastModified: new Date(),
-//       changeFrequency: 'monthly' as const,
-//       priority: 1,
-//     },
-//     {
-//       url: `${baseUrl}/pielegnacje`,
-//       lastModified: new Date(),
-//       changeFrequency: 'weekly' as const,
-//       priority: 0.8,
-//     },
-//     {
-//       url: `${baseUrl}/pielegnacje/spersonalizowany-plan-pielegnacyjny`,
-//       lastModified: new Date(),
-//       changeFrequency: 'weekly' as const,
-//       priority: 0.8,
-//     },
-//   ]
+  const staticPages = [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/pielegnacje`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/pielegnacje/spersonalizowany-plan-pielegnacyjny`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+  ]
 
-//   const dynamicPages = Object.keys(skincarePlans).map((slug) => ({
-//     url: `${baseUrl}/pielegnacje/${slug}`,
-//     lastModified: new Date(),
-//     changeFrequency: 'weekly' as const,
-//     priority: 0.6,
-//   }))
+  const dynamicPages = Object.keys(skincarePlans).map((slug) => ({
+    url: `${baseUrl}/pielegnacje/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.6,
+  }))
 
-//   return [...staticPages, ...dynamicPages]
-// }
+  return [...staticPages, ...dynamicPages]
+}
 
 export default function RootLayout({
   children,

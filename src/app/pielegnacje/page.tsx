@@ -204,7 +204,6 @@ export const skincarePlans: SkincarePlan = {
 }
 
 export default function Pielegnacje() { 
-    
     return (
         <>
             <HeroBanner />
