@@ -10,9 +10,5 @@ export default function ProductView({ product }: { product: Product }) {
                 <span>{title}</span>
             </Link>
         </div>
-        // <div className="flex flex-col w-full">
-        //     <h3 className="bg-[var(--color-secondary)] text-center font-semibold my-2">{product.step}</h3>
-        //     <Link href={product.link} target="_blank" className="underline p-2">{product.title}</Link>
-        // </div>
     )
 }
