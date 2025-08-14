@@ -3,20 +3,9 @@ import { usePathname, useSearchParams } from 'next/navigation';
 
 declare global {
     interface Window {
-        gtag: (
-          command: string,
-          action: string,
-          params: {
-            page_path?: string;
-            button_id?: string;
-            button_name?: string;
-            form_id?: string;
-            form_name?: string;
-            success?: boolean;
-            [key: string]: any;
-          }
-        ) => void;
-      }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      gtag: (...args: any[]) => void;
+    }
   }
 
 export const useAnalytics = () => {
