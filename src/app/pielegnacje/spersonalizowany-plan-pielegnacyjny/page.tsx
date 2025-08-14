@@ -6,12 +6,12 @@ import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 export async function generateStaticParams() {
     return [
         {
-            slug: "konsultacje-pielenacyjne",
+            slug: "konsultacje-pielegnacyjne",
         }
     ]
 }
 
-export default function SpersonalizowanyPlanPielenacyjny() { 
+export default function SpersonalizowanyPlanPielegnacyjny() { 
     return (
         <>
             <HeroBanner />

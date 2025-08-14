@@ -1,6 +1,7 @@
-import Link from "next/link";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../components/ui/accordion";
+
 import HeroBanner from "../components/HeroBaner";
+import WrapperContent from "./wrapper-content";
+
 
 export type Product = {
     step: string;
@@ -19,9 +20,9 @@ export type SkincarePlan = {
 };
 
 export const skincarePlans: SkincarePlan = {
-    'pielenacja-wspomagajaca-skore-tradzikowa': {
+    'pielegnacja-wspomagajaca-skore-tradzikowa': {
         title: "Pielęgnacja wspomagająca skórę trądzikową",
-        link: "pielenacja-wspomagajaca-skore-tradzikowa",
+        link: "pielegnacja-wspomagajaca-skore-tradzikowa",
         description: "W tej pielęgnacji skupiłam się na działaniu przeciwzaskównikowych poprzez kwasy takie jak salicylowy czy azelainowy, które połączyłam z nawilżeniem, koniecznym do poprawnego funkcjonowania skóry trądzikowej. Chciałam jednak mocno zaznaczyć, że trądzik jest chorobą skóry i w większości przypadków sama pielęgnacja nie wystarczy by poprawić całkowicie stan skóry. Zachęcam was do wybrania się na wizytę do dermatologa w celu omówienia leczenia. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",  
         nightProducts: [
             {
@@ -108,9 +109,9 @@ export const skincarePlans: SkincarePlan = {
             },
         ]
     },
-    'pielenacja-przeciwzmarszczkowa': {
+    'pielegnacja-przeciwzmarszczkowa': {
         title: "Pielęgnacja przeciwzmarszczkowa",
-        link: "pielenacja-przeciwzmarszczkowa",
+        link: "pielegnacja-przeciwzmarszczkowa",
         description: "W tej pielęgnacji połączyłam działanie przeciwzmarszczkowym retinolu, peptydów i DMAE razem z poranną antyoksydacją. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",
         nightProducts: [
             {
@@ -152,9 +153,9 @@ export const skincarePlans: SkincarePlan = {
             },
         ]
     },
-    'pielenacja-regenerujaca': {
+    'pielegnacja-regenerujaca': {
         title: "Pielęgnacja regenerująca",
-        link: "pielenacja-regenerujaca",
+        link: "pielegnacja-regenerujaca",
         description: "W tej pielęgnacji postawiłam na warstwowość produktów, by jak najbardziej odżywić i nawilżyć skórę. Kluczowe składniki w tej pielęgnacji to ceramidy, fermenty czy wąkrota azjatycka. Wszystkie przedstawione poniżej przedstawione kosmetyki testowałam osobiście. Zamieszczone linki są linkami afiliacyjnymi, które przeniosą was do konkretnych produktów na drogerii Cosibella.",
         nightProducts: [
             {
@@ -209,21 +210,7 @@ export default function Pielegnacje() {
             <HeroBanner />
             <div className="flex flex-col items-center justify-center px-5">
                 <h2 className="font-family-montserrat text-3xl my-7 ">Plany Pielęgnacyjne</h2>
-                <div className="w-full">
-                    <Link href="/pielegnacje/spersonalizowany-plan-pielegnacyjny" className="font-family-montserrat bg-[var(--color-secondary)] border border-[var(--color-primary)] p-8 text-[1.4rem] w-full mb-5 flex rounded-md font-medium underline">Konsultacje pielęgnacyjne</Link>
-                    <Accordion type="single" collapsible className="w-full">
-                        <AccordionItem value="plany-pielegnacyjne" className="border-none mb-5">
-                            <AccordionTrigger className="bg-transparent border border-[var(--color-primary)] p-8 text-[1.4rem] font-family-montserrat">Konkretne plany pielęgnacyjne</AccordionTrigger>
-                            <AccordionContent className="p-4">
-                                <ul>
-                                {Object.values(skincarePlans).map((plan) => (
-                                    <li key={plan.title}><Link href={`/pielegnacje/${plan.link}`} className="block w-full text-[1rem] pb-1 underline">{plan.title}</Link></li>
-                                ))}
-                                </ul>
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
-                </div>
+                <WrapperContent />
             </div>
         </>
     )
