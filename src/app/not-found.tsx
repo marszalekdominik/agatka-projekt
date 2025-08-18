@@ -1,14 +1,6 @@
-'use client';
-
 import { Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-
-function SearchParamsComponent() {
-  const searchParams = useSearchParams();
-  // You can use searchParams here if needed
-  return null;
-}
+import SearchParamsWrapper from '@/app/components/SearchParamsWrapper';
 
 export default function NotFound() {
   return (
@@ -16,7 +8,7 @@ export default function NotFound() {
       <h2 className="text-3xl font-family-montserrat mb-4">Nie znaleziono strony</h2>
       <p className="mb-6 text-gray-600">Przepraszamy, ale strona której szukasz nie istnieje.</p>
       <Suspense fallback={<div>Ładowanie...</div>}>
-        <SearchParamsComponent />
+        <SearchParamsWrapper />
       </Suspense>
       <Link 
         href="/" 
